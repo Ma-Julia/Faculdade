@@ -1,0 +1,541 @@
+{
+  "version": 2,
+  "dgSpecHash": "wr0d/TTJLxo=",
+  "success": false,
+  "projectFilePath": "D:\\CampSoft\\Faculdade\\CampSoft\\CampSoft\\CampSoft.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Nailson\\.nuget\\packages\\microsoft.maui.controls\\8.0.21\\microsoft.maui.controls.8.0.21.nupkg.sha512",
+    "C:\\Users\\Nailson\\.nuget\\packages\\microsoft.maui.controls.build.tasks\\8.0.21\\microsoft.maui.controls.build.tasks.8.0.21.nupkg.sha512",
+    "C:\\Users\\Nailson\\.nuget\\packages\\microsoft.maui.controls.compatibility\\8.0.21\\microsoft.maui.controls.compatibility.8.0.21.nupkg.sha512",
+    "C:\\Users\\Nailson\\.nuget\\packages\\microsoft.maui.controls.core\\8.0.21\\microsoft.maui.controls.core.8.0.21.nupkg.sha512",
+    "C:\\Users\\Nailson\\.nuget\\packages\\microsoft.maui.controls.xaml\\8.0.21\\microsoft.maui.controls.xaml.8.0.21.nupkg.sha512",
+    "C:\\Users\\Nailson\\.nuget\\packages\\microsoft.maui.core\\8.0.21\\microsoft.maui.core.8.0.21.nupkg.sha512",
+    "C:\\Users\\Nailson\\.nuget\\packages\\microsoft.maui.essentials\\8.0.21\\microsoft.maui.essentials.8.0.21.nupkg.sha512",
+    "C:\\Users\\Nailson\\.nuget\\packages\\microsoft.maui.graphics\\8.0.21\\microsoft.maui.graphics.8.0.21.nupkg.sha512",
+    "C:\\Users\\Nailson\\.nuget\\packages\\microsoft.maui.graphics.win2d.winui.desktop\\8.0.21\\microsoft.maui.graphics.win2d.winui.desktop.8.0.21.nupkg.sha512",
+    "C:\\Users\\Nailson\\.nuget\\packages\\microsoft.maui.resizetizer\\8.0.21\\microsoft.maui.resizetizer.8.0.21.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages\\microsoft.windows.sdk.buildtools\\10.0.22621.3233\\microsoft.windows.sdk.buildtools.10.0.22621.3233.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Microsoft.Maui.Core 8.0.21 depende de Microsoft.Windows.SDK.BuildTools (>= 10.0.22621.756), mas Microsoft.Windows.SDK.BuildTools 10.0.22621.756 não foi encontrado. A melhor correspondência aproximada de Microsoft.Windows.SDK.BuildTools 10.0.22621.3233 foi resolvida.",
+      "libraryId": "Microsoft.Windows.SDK.BuildTools",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041",
+        "net8.0-windows10.0.19041/android-arm",
+        "net8.0-windows10.0.19041/android-arm64",
+        "net8.0-windows10.0.19041/android-x64",
+        "net8.0-windows10.0.19041/android-x86",
+        "net8.0-windows10.0.19041/iossimulator-x64",
+        "net8.0-windows10.0.19041/maccatalyst-x64",
+        "net8.0-windows10.0.19041/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Não é possível encontrar o pacote Microsoft.NET.ILLink.Tasks. Não existe nenhum pacote com esta ID nas origens: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.NET.ILLink.Tasks",
+      "targetGraphs": [
+        "net8.0-android34.0",
+        "net8.0-android34.0/android-arm",
+        "net8.0-android34.0/android-arm64",
+        "net8.0-android34.0/android-x64",
+        "net8.0-android34.0/android-x86",
+        "net8.0-android34.0/iossimulator-x64",
+        "net8.0-android34.0/maccatalyst-x64",
+        "net8.0-android34.0/win10-x64",
+        "net8.0-ios17.2",
+        "net8.0-ios17.2/android-arm",
+        "net8.0-ios17.2/android-arm64",
+        "net8.0-ios17.2/android-x64",
+        "net8.0-ios17.2/android-x86",
+        "net8.0-ios17.2/iossimulator-x64",
+        "net8.0-ios17.2/maccatalyst-x64",
+        "net8.0-ios17.2/win10-x64",
+        "net8.0-maccatalyst17.2",
+        "net8.0-maccatalyst17.2/android-arm",
+        "net8.0-maccatalyst17.2/android-arm64",
+        "net8.0-maccatalyst17.2/android-x64",
+        "net8.0-maccatalyst17.2/android-x86",
+        "net8.0-maccatalyst17.2/iossimulator-x64",
+        "net8.0-maccatalyst17.2/maccatalyst-x64",
+        "net8.0-maccatalyst17.2/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Não é possível encontrar o pacote Microsoft.Extensions.Logging.Debug. Não existe nenhum pacote com esta ID nas origens: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net8.0-android34.0",
+        "net8.0-android34.0/android-arm",
+        "net8.0-android34.0/android-arm64",
+        "net8.0-android34.0/android-x64",
+        "net8.0-android34.0/android-x86",
+        "net8.0-android34.0/iossimulator-x64",
+        "net8.0-android34.0/maccatalyst-x64",
+        "net8.0-android34.0/win10-x64",
+        "net8.0-ios17.2",
+        "net8.0-ios17.2/android-arm",
+        "net8.0-ios17.2/android-arm64",
+        "net8.0-ios17.2/android-x64",
+        "net8.0-ios17.2/android-x86",
+        "net8.0-ios17.2/iossimulator-x64",
+        "net8.0-ios17.2/maccatalyst-x64",
+        "net8.0-ios17.2/win10-x64",
+        "net8.0-maccatalyst17.2",
+        "net8.0-maccatalyst17.2/android-arm",
+        "net8.0-maccatalyst17.2/android-arm64",
+        "net8.0-maccatalyst17.2/android-x64",
+        "net8.0-maccatalyst17.2/android-x86",
+        "net8.0-maccatalyst17.2/iossimulator-x64",
+        "net8.0-maccatalyst17.2/maccatalyst-x64",
+        "net8.0-maccatalyst17.2/win10-x64",
+        "net8.0-windows10.0.19041",
+        "net8.0-windows10.0.19041/android-arm",
+        "net8.0-windows10.0.19041/android-arm64",
+        "net8.0-windows10.0.19041/android-x64",
+        "net8.0-windows10.0.19041/android-x86",
+        "net8.0-windows10.0.19041/iossimulator-x64",
+        "net8.0-windows10.0.19041/maccatalyst-x64",
+        "net8.0-windows10.0.19041/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Não é possível encontrar o pacote Microsoft.Extensions.Configuration. Não existe nenhum pacote com esta ID nas origens: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.Extensions.Configuration",
+      "targetGraphs": [
+        "net8.0-android34.0",
+        "net8.0-android34.0/android-arm",
+        "net8.0-android34.0/android-arm64",
+        "net8.0-android34.0/android-x64",
+        "net8.0-android34.0/android-x86",
+        "net8.0-android34.0/iossimulator-x64",
+        "net8.0-android34.0/maccatalyst-x64",
+        "net8.0-android34.0/win10-x64",
+        "net8.0-ios17.2",
+        "net8.0-ios17.2/android-arm",
+        "net8.0-ios17.2/android-arm64",
+        "net8.0-ios17.2/android-x64",
+        "net8.0-ios17.2/android-x86",
+        "net8.0-ios17.2/iossimulator-x64",
+        "net8.0-ios17.2/maccatalyst-x64",
+        "net8.0-ios17.2/win10-x64",
+        "net8.0-maccatalyst17.2",
+        "net8.0-maccatalyst17.2/android-arm",
+        "net8.0-maccatalyst17.2/android-arm64",
+        "net8.0-maccatalyst17.2/android-x64",
+        "net8.0-maccatalyst17.2/android-x86",
+        "net8.0-maccatalyst17.2/iossimulator-x64",
+        "net8.0-maccatalyst17.2/maccatalyst-x64",
+        "net8.0-maccatalyst17.2/win10-x64",
+        "net8.0-windows10.0.19041",
+        "net8.0-windows10.0.19041/android-arm",
+        "net8.0-windows10.0.19041/android-arm64",
+        "net8.0-windows10.0.19041/android-x64",
+        "net8.0-windows10.0.19041/android-x86",
+        "net8.0-windows10.0.19041/iossimulator-x64",
+        "net8.0-windows10.0.19041/maccatalyst-x64",
+        "net8.0-windows10.0.19041/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Não é possível encontrar o pacote Microsoft.Extensions.Logging.Abstractions. Não existe nenhum pacote com esta ID nas origens: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.Extensions.Logging.Abstractions",
+      "targetGraphs": [
+        "net8.0-android34.0",
+        "net8.0-android34.0/android-arm",
+        "net8.0-android34.0/android-arm64",
+        "net8.0-android34.0/android-x64",
+        "net8.0-android34.0/android-x86",
+        "net8.0-android34.0/iossimulator-x64",
+        "net8.0-android34.0/maccatalyst-x64",
+        "net8.0-android34.0/win10-x64",
+        "net8.0-ios17.2",
+        "net8.0-ios17.2/android-arm",
+        "net8.0-ios17.2/android-arm64",
+        "net8.0-ios17.2/android-x64",
+        "net8.0-ios17.2/android-x86",
+        "net8.0-ios17.2/iossimulator-x64",
+        "net8.0-ios17.2/maccatalyst-x64",
+        "net8.0-ios17.2/win10-x64",
+        "net8.0-maccatalyst17.2",
+        "net8.0-maccatalyst17.2/android-arm",
+        "net8.0-maccatalyst17.2/android-arm64",
+        "net8.0-maccatalyst17.2/android-x64",
+        "net8.0-maccatalyst17.2/android-x86",
+        "net8.0-maccatalyst17.2/iossimulator-x64",
+        "net8.0-maccatalyst17.2/maccatalyst-x64",
+        "net8.0-maccatalyst17.2/win10-x64",
+        "net8.0-windows10.0.19041",
+        "net8.0-windows10.0.19041/android-arm",
+        "net8.0-windows10.0.19041/android-arm64",
+        "net8.0-windows10.0.19041/android-x64",
+        "net8.0-windows10.0.19041/android-x86",
+        "net8.0-windows10.0.19041/iossimulator-x64",
+        "net8.0-windows10.0.19041/maccatalyst-x64",
+        "net8.0-windows10.0.19041/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Não é possível encontrar o pacote Microsoft.Extensions.DependencyInjection. Não existe nenhum pacote com esta ID nas origens: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.Extensions.DependencyInjection",
+      "targetGraphs": [
+        "net8.0-android34.0",
+        "net8.0-android34.0/android-arm",
+        "net8.0-android34.0/android-arm64",
+        "net8.0-android34.0/android-x64",
+        "net8.0-android34.0/android-x86",
+        "net8.0-android34.0/iossimulator-x64",
+        "net8.0-android34.0/maccatalyst-x64",
+        "net8.0-android34.0/win10-x64",
+        "net8.0-ios17.2",
+        "net8.0-ios17.2/android-arm",
+        "net8.0-ios17.2/android-arm64",
+        "net8.0-ios17.2/android-x64",
+        "net8.0-ios17.2/android-x86",
+        "net8.0-ios17.2/iossimulator-x64",
+        "net8.0-ios17.2/maccatalyst-x64",
+        "net8.0-ios17.2/win10-x64",
+        "net8.0-maccatalyst17.2",
+        "net8.0-maccatalyst17.2/android-arm",
+        "net8.0-maccatalyst17.2/android-arm64",
+        "net8.0-maccatalyst17.2/android-x64",
+        "net8.0-maccatalyst17.2/android-x86",
+        "net8.0-maccatalyst17.2/iossimulator-x64",
+        "net8.0-maccatalyst17.2/maccatalyst-x64",
+        "net8.0-maccatalyst17.2/win10-x64",
+        "net8.0-windows10.0.19041",
+        "net8.0-windows10.0.19041/android-arm",
+        "net8.0-windows10.0.19041/android-arm64",
+        "net8.0-windows10.0.19041/android-x64",
+        "net8.0-windows10.0.19041/android-x86",
+        "net8.0-windows10.0.19041/iossimulator-x64",
+        "net8.0-windows10.0.19041/maccatalyst-x64",
+        "net8.0-windows10.0.19041/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Não é possível encontrar o pacote Microsoft.Extensions.Logging. Não existe nenhum pacote com esta ID nas origens: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.Extensions.Logging",
+      "targetGraphs": [
+        "net8.0-android34.0",
+        "net8.0-android34.0/android-arm",
+        "net8.0-android34.0/android-arm64",
+        "net8.0-android34.0/android-x64",
+        "net8.0-android34.0/android-x86",
+        "net8.0-android34.0/iossimulator-x64",
+        "net8.0-android34.0/maccatalyst-x64",
+        "net8.0-android34.0/win10-x64",
+        "net8.0-ios17.2",
+        "net8.0-ios17.2/android-arm",
+        "net8.0-ios17.2/android-arm64",
+        "net8.0-ios17.2/android-x64",
+        "net8.0-ios17.2/android-x86",
+        "net8.0-ios17.2/iossimulator-x64",
+        "net8.0-ios17.2/maccatalyst-x64",
+        "net8.0-ios17.2/win10-x64",
+        "net8.0-maccatalyst17.2",
+        "net8.0-maccatalyst17.2/android-arm",
+        "net8.0-maccatalyst17.2/android-arm64",
+        "net8.0-maccatalyst17.2/android-x64",
+        "net8.0-maccatalyst17.2/android-x86",
+        "net8.0-maccatalyst17.2/iossimulator-x64",
+        "net8.0-maccatalyst17.2/maccatalyst-x64",
+        "net8.0-maccatalyst17.2/win10-x64",
+        "net8.0-windows10.0.19041",
+        "net8.0-windows10.0.19041/android-arm",
+        "net8.0-windows10.0.19041/android-arm64",
+        "net8.0-windows10.0.19041/android-x64",
+        "net8.0-windows10.0.19041/android-x86",
+        "net8.0-windows10.0.19041/iossimulator-x64",
+        "net8.0-windows10.0.19041/maccatalyst-x64",
+        "net8.0-windows10.0.19041/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Não é possível encontrar o pacote Xamarin.Android.Glide. Não existe nenhum pacote com esta ID nas origens: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "libraryId": "Xamarin.Android.Glide",
+      "targetGraphs": [
+        "net8.0-android34.0",
+        "net8.0-android34.0/android-arm",
+        "net8.0-android34.0/android-arm64",
+        "net8.0-android34.0/android-x64",
+        "net8.0-android34.0/android-x86",
+        "net8.0-android34.0/iossimulator-x64",
+        "net8.0-android34.0/maccatalyst-x64",
+        "net8.0-android34.0/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Não é possível encontrar o pacote Xamarin.AndroidX.Lifecycle.LiveData. Não existe nenhum pacote com esta ID nas origens: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "libraryId": "Xamarin.AndroidX.Lifecycle.LiveData",
+      "targetGraphs": [
+        "net8.0-android34.0",
+        "net8.0-android34.0/android-arm",
+        "net8.0-android34.0/android-arm64",
+        "net8.0-android34.0/android-x64",
+        "net8.0-android34.0/android-x86",
+        "net8.0-android34.0/iossimulator-x64",
+        "net8.0-android34.0/maccatalyst-x64",
+        "net8.0-android34.0/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Não é possível encontrar o pacote Xamarin.AndroidX.Navigation.Common. Não existe nenhum pacote com esta ID nas origens: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "libraryId": "Xamarin.AndroidX.Navigation.Common",
+      "targetGraphs": [
+        "net8.0-android34.0",
+        "net8.0-android34.0/android-arm",
+        "net8.0-android34.0/android-arm64",
+        "net8.0-android34.0/android-x64",
+        "net8.0-android34.0/android-x86",
+        "net8.0-android34.0/iossimulator-x64",
+        "net8.0-android34.0/maccatalyst-x64",
+        "net8.0-android34.0/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Não é possível encontrar o pacote Xamarin.AndroidX.Navigation.Fragment. Não existe nenhum pacote com esta ID nas origens: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "libraryId": "Xamarin.AndroidX.Navigation.Fragment",
+      "targetGraphs": [
+        "net8.0-android34.0",
+        "net8.0-android34.0/android-arm",
+        "net8.0-android34.0/android-arm64",
+        "net8.0-android34.0/android-x64",
+        "net8.0-android34.0/android-x86",
+        "net8.0-android34.0/iossimulator-x64",
+        "net8.0-android34.0/maccatalyst-x64",
+        "net8.0-android34.0/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Não é possível encontrar o pacote Xamarin.AndroidX.Navigation.Runtime. Não existe nenhum pacote com esta ID nas origens: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "libraryId": "Xamarin.AndroidX.Navigation.Runtime",
+      "targetGraphs": [
+        "net8.0-android34.0",
+        "net8.0-android34.0/android-arm",
+        "net8.0-android34.0/android-arm64",
+        "net8.0-android34.0/android-x64",
+        "net8.0-android34.0/android-x86",
+        "net8.0-android34.0/iossimulator-x64",
+        "net8.0-android34.0/maccatalyst-x64",
+        "net8.0-android34.0/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Não é possível encontrar o pacote Xamarin.AndroidX.Navigation.UI. Não existe nenhum pacote com esta ID nas origens: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "libraryId": "Xamarin.AndroidX.Navigation.UI",
+      "targetGraphs": [
+        "net8.0-android34.0",
+        "net8.0-android34.0/android-arm",
+        "net8.0-android34.0/android-arm64",
+        "net8.0-android34.0/android-x64",
+        "net8.0-android34.0/android-x86",
+        "net8.0-android34.0/iossimulator-x64",
+        "net8.0-android34.0/maccatalyst-x64",
+        "net8.0-android34.0/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Não é possível encontrar o pacote Xamarin.AndroidX.SwipeRefreshLayout. Não existe nenhum pacote com esta ID nas origens: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "libraryId": "Xamarin.AndroidX.SwipeRefreshLayout",
+      "targetGraphs": [
+        "net8.0-android34.0",
+        "net8.0-android34.0/android-arm",
+        "net8.0-android34.0/android-arm64",
+        "net8.0-android34.0/android-x64",
+        "net8.0-android34.0/android-x86",
+        "net8.0-android34.0/iossimulator-x64",
+        "net8.0-android34.0/maccatalyst-x64",
+        "net8.0-android34.0/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Não é possível encontrar o pacote Xamarin.Google.Android.Material. Não existe nenhum pacote com esta ID nas origens: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "libraryId": "Xamarin.Google.Android.Material",
+      "targetGraphs": [
+        "net8.0-android34.0",
+        "net8.0-android34.0/android-arm",
+        "net8.0-android34.0/android-arm64",
+        "net8.0-android34.0/android-x64",
+        "net8.0-android34.0/android-x86",
+        "net8.0-android34.0/iossimulator-x64",
+        "net8.0-android34.0/maccatalyst-x64",
+        "net8.0-android34.0/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Não é possível encontrar o pacote Xamarin.AndroidX.Browser. Não existe nenhum pacote com esta ID nas origens: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "libraryId": "Xamarin.AndroidX.Browser",
+      "targetGraphs": [
+        "net8.0-android34.0",
+        "net8.0-android34.0/android-arm",
+        "net8.0-android34.0/android-arm64",
+        "net8.0-android34.0/android-x64",
+        "net8.0-android34.0/android-x86",
+        "net8.0-android34.0/iossimulator-x64",
+        "net8.0-android34.0/maccatalyst-x64",
+        "net8.0-android34.0/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Não é possível encontrar o pacote Xamarin.AndroidX.Security.SecurityCrypto. Não existe nenhum pacote com esta ID nas origens: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "libraryId": "Xamarin.AndroidX.Security.SecurityCrypto",
+      "targetGraphs": [
+        "net8.0-android34.0",
+        "net8.0-android34.0/android-arm",
+        "net8.0-android34.0/android-arm64",
+        "net8.0-android34.0/android-x64",
+        "net8.0-android34.0/android-x86",
+        "net8.0-android34.0/iossimulator-x64",
+        "net8.0-android34.0/maccatalyst-x64",
+        "net8.0-android34.0/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Não é possível encontrar o pacote Xamarin.Google.Crypto.Tink.Android. Não existe nenhum pacote com esta ID nas origens: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "libraryId": "Xamarin.Google.Crypto.Tink.Android",
+      "targetGraphs": [
+        "net8.0-android34.0",
+        "net8.0-android34.0/android-arm",
+        "net8.0-android34.0/android-arm64",
+        "net8.0-android34.0/android-x64",
+        "net8.0-android34.0/android-x86",
+        "net8.0-android34.0/iossimulator-x64",
+        "net8.0-android34.0/maccatalyst-x64",
+        "net8.0-android34.0/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Não é possível encontrar o pacote Microsoft.Graphics.Win2D. Não existe nenhum pacote com esta ID nas origens: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.Graphics.Win2D",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041",
+        "net8.0-windows10.0.19041/android-arm",
+        "net8.0-windows10.0.19041/android-arm64",
+        "net8.0-windows10.0.19041/android-x64",
+        "net8.0-windows10.0.19041/android-x86",
+        "net8.0-windows10.0.19041/iossimulator-x64",
+        "net8.0-windows10.0.19041/maccatalyst-x64",
+        "net8.0-windows10.0.19041/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Não é possível encontrar o pacote Microsoft.WindowsAppSDK. Não existe nenhum pacote com esta ID nas origens: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.WindowsAppSDK",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041",
+        "net8.0-windows10.0.19041/android-arm",
+        "net8.0-windows10.0.19041/android-arm64",
+        "net8.0-windows10.0.19041/android-x64",
+        "net8.0-windows10.0.19041/android-x86",
+        "net8.0-windows10.0.19041/iossimulator-x64",
+        "net8.0-windows10.0.19041/maccatalyst-x64",
+        "net8.0-windows10.0.19041/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Não é possível encontrar o pacote Microsoft.NETCore.App.Runtime.Mono.android-arm. Não existe nenhum pacote com esta ID nas origens: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.NETCore.App.Runtime.Mono.android-arm",
+      "targetGraphs": [
+        "net8.0-android34.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Não é possível encontrar o pacote Microsoft.NETCore.App.Runtime.Mono.android-x86. Não existe nenhum pacote com esta ID nas origens: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.NETCore.App.Runtime.Mono.android-x86",
+      "targetGraphs": [
+        "net8.0-android34.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Não é possível encontrar o pacote Microsoft.NETCore.App.Runtime.Mono.android-x64. Não existe nenhum pacote com esta ID nas origens: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.NETCore.App.Runtime.Mono.android-x64",
+      "targetGraphs": [
+        "net8.0-android34.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Não é possível encontrar o pacote Microsoft.NETCore.App.Runtime.Mono.android-arm64. Não existe nenhum pacote com esta ID nas origens: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.NETCore.App.Runtime.Mono.android-arm64",
+      "targetGraphs": [
+        "net8.0-android34.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Não é possível encontrar o pacote Microsoft.NETCore.App.Runtime.Mono.iossimulator-x64. Não existe nenhum pacote com esta ID nas origens: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.NETCore.App.Runtime.Mono.iossimulator-x64",
+      "targetGraphs": [
+        "net8.0-ios17.2"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Não é possível encontrar o pacote Microsoft.NETCore.App.Runtime.Mono.maccatalyst-x64. Não existe nenhum pacote com esta ID nas origens: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.NETCore.App.Runtime.Mono.maccatalyst-x64",
+      "targetGraphs": [
+        "net8.0-maccatalyst17.2"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Não é possível encontrar o pacote Microsoft.Windows.SDK.NET.Ref. Não existe nenhum pacote com esta ID nas origens: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.Windows.SDK.NET.Ref",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041"
+      ]
+    }
+  ]
+}
