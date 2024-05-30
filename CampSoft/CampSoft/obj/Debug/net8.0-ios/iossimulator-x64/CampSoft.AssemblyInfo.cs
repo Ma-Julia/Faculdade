@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CampSoft")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+17652a0c56c472f103c7143beb352961a21a793e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+ef267c5dc5e38d704eddef5c10e35ddcb724b6ba")]
 [assembly: System.Reflection.AssemblyProductAttribute("CampSoft")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CampSoft")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
