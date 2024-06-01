@@ -2,4 +2,13 @@
 # Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
 ################################################################################
 
-/CampSoft/.vs
+/CampSoft/bin/
+/CampSoft/obj/
+/CampSoft/packages/
+/CampSoft/TestResults/
+/CampSoft/.vs/
+*.log
+*.tmp
+*.user
+*.db
+README.md
