@@ -57,9 +57,23 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <AndroidResource Remove="NovaPasta\**" />
+	  <Compile Remove="NovaPasta\**" />
+	  <EmbeddedResource Remove="NovaPasta\**" />
+	  <MauiCss Remove="NovaPasta\**" />
+	  <MauiXaml Remove="NovaPasta\**" />
+	  <None Remove="NovaPasta\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiImage Remove="Resources\Images\iniciocasa.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Remove="Resources\Images\agenda.png" />
 	  <None Remove="Resources\Images\conquistas.png" />
 	  <None Remove="Resources\Images\inicio.png" />
+	  <None Remove="Resources\Images\iniciocasa.png" />
 	  <None Remove="Resources\Images\logocampsoft.png" />
 	  <None Remove="Resources\Images\perfil.png" />
 	</ItemGroup>
@@ -69,5 +83,19 @@
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
 	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Paginas\SorteioSimples.xaml.cs">
+	    <DependentUpon>SorteioSimples.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Paginas\SorteioSimples.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
+	<ProjectExtensions><VisualStudio><UserProperties XamarinHotReloadDebuggerTimeoutExceptionCampSoftHideInfoBar="True" /></VisualStudio></ProjectExtensions>
 
 </Project>

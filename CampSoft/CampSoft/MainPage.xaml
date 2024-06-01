@@ -20,7 +20,7 @@
                 FontSize="16"
                 BackgroundColor="Transparent"
                 HorizontalOptions="Center"
-                Clicked="BTNSorteioSimples_Clicked"/> <!--ajeitar esse evento-->
+                Clicked="BTNSorteioSimples_Clicked"/>
 
 
             </VerticalStackLayout>
@@ -29,9 +29,15 @@
     <ContentPage
         IconImageSource="conquistas">
         <ScrollView>
-            <VerticalStackLayout>
-                <Label Text="Suas Conquistas"
-                   FontSize="Header"
+            <VerticalStackLayout BackgroundColor="#CFBCA8"
+            Padding="40,40"
+            Spacing="25">
+                <Image
+                Source="logocampsoft.png"
+                HeightRequest="185"/>
+                
+                <Label Text="SUAS CONQUISTAS"
+                   FontSize="16"
                    HorizontalOptions="Center"
                    Padding="10"/>
             </VerticalStackLayout>
@@ -40,8 +46,14 @@
     <ContentPage
         IconImageSource="agenda">
         <ScrollView>
-            <VerticalStackLayout>
-                <Label Text="Sua Agenda"
+            <VerticalStackLayout  BackgroundColor="#CFBCA8"
+            Padding="40,40"
+            Spacing="25">
+                <Image
+                Source="logocampsoft.png"
+                HeightRequest="185"/>
+                
+                <Label Text="SUA AGENDA"
            FontSize="Header"
            HorizontalOptions="Center"
            Padding="10"/>
@@ -51,8 +63,14 @@
     <ContentPage
         IconImageSource="perfil">
         <ScrollView>
-            <VerticalStackLayout>
-                <Label Text="Seu Perfil"
+            <VerticalStackLayout  BackgroundColor="#CFBCA8"
+            Padding="40,40"
+            Spacing="25">
+                <Image
+                Source="logocampsoft.png"
+                HeightRequest="185"/>
+                
+                <Label Text="SEU PERFIL"
            FontSize="Header"
            HorizontalOptions="Center"
            Padding="10"/>
