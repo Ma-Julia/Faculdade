@@ -7,8 +7,14 @@
 /CampSoft/packages/
 /CampSoft/TestResults/
 /CampSoft/.vs/
+bin/
+obj/
+packages/
+TestResults/
+.vs/
 *.log
 *.tmp
 *.user
 *.db
 README.md
+/CampSoft/CampSoft/obj/Debug/net8.0-android/android/assets/CampSoft.dll
