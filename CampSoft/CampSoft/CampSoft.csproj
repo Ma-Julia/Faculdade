@@ -57,12 +57,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <AndroidResource Remove="NovaPasta\**" />
-	  <Compile Remove="NovaPasta\**" />
-	  <EmbeddedResource Remove="NovaPasta\**" />
-	  <MauiCss Remove="NovaPasta\**" />
-	  <MauiXaml Remove="NovaPasta\**" />
-	  <None Remove="NovaPasta\**" />
+	  <Compile Remove="componentes\DataPage.cs" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -79,7 +74,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
+		<PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.1" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.40" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
 	</ItemGroup>
@@ -91,6 +87,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Paginas\Agendamento.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Paginas\SorteioSimples.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

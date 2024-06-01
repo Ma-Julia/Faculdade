@@ -35,28 +35,11 @@
                 <Image
                 Source="logocampsoft.png"
                 HeightRequest="185"/>
-                
+
                 <Label Text="SUAS CONQUISTAS"
                    FontSize="16"
                    HorizontalOptions="Center"
                    Padding="10"/>
-            </VerticalStackLayout>
-        </ScrollView>
-    </ContentPage>
-    <ContentPage
-        IconImageSource="agenda">
-        <ScrollView>
-            <VerticalStackLayout  BackgroundColor="#CFBCA8"
-            Padding="40,40"
-            Spacing="25">
-                <Image
-                Source="logocampsoft.png"
-                HeightRequest="185"/>
-                
-                <Label Text="SUA AGENDA"
-           FontSize="Header"
-           HorizontalOptions="Center"
-           Padding="10"/>
             </VerticalStackLayout>
         </ScrollView>
     </ContentPage>

@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\CampSoft\\Faculdade\\CampSoft\\CampSoft\\CampSoft.csproj": {}
+    "D:\\CampSoft\\Faculdade\\CampSoft\\CampSoft\\CampSoft.csproj": {}
   },
   "projects": {
-    "C:\\CampSoft\\Faculdade\\CampSoft\\CampSoft\\CampSoft.csproj": {
+    "D:\\CampSoft\\Faculdade\\CampSoft\\CampSoft\\CampSoft.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CampSoft\\Faculdade\\CampSoft\\CampSoft\\CampSoft.csproj",
+        "projectUniqueName": "D:\\CampSoft\\Faculdade\\CampSoft\\CampSoft\\CampSoft.csproj",
         "projectName": "CampSoft",
-        "projectPath": "C:\\CampSoft\\Faculdade\\CampSoft\\CampSoft\\CampSoft.csproj",
-        "packagesPath": "C:\\Users\\Maria Julia\\.nuget\\packages\\",
-        "outputPath": "C:\\CampSoft\\Faculdade\\CampSoft\\CampSoft\\obj\\",
+        "projectPath": "D:\\CampSoft\\Faculdade\\CampSoft\\CampSoft\\CampSoft.csproj",
+        "packagesPath": "C:\\Users\\Nailson\\.nuget\\packages\\",
+        "outputPath": "D:\\CampSoft\\Faculdade\\CampSoft\\CampSoft\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Maria Julia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nailson\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -66,13 +66,17 @@
         "net8.0-android34.0": {
           "targetAlias": "net8.0-android",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.1, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.0, )"
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.21, )"
+              "version": "[8.0.40, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
@@ -109,13 +113,17 @@
         "net8.0-ios17.2": {
           "targetAlias": "net8.0-ios",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.1, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.0, )"
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.21, )"
+              "version": "[8.0.40, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
@@ -152,13 +160,17 @@
         "net8.0-maccatalyst17.2": {
           "targetAlias": "net8.0-maccatalyst",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.1, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.0, )"
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.21, )"
+              "version": "[8.0.40, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
@@ -196,13 +208,17 @@
         "net8.0-windows10.0.19041": {
           "targetAlias": "net8.0-windows10.0.19041.0",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.1, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.0, )"
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.21, )"
+              "version": "[8.0.40, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
