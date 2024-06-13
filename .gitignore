@@ -17,3 +17,4 @@ TestResults/
 *.user
 *.db
 README.md
+/CampSoft/CampSoft/CampSoft.csproj.user

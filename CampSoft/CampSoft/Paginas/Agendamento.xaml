@@ -3,35 +3,33 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CampSoft.Paginas.Agendamento"
              Title="Agendamento">
-    <VerticalStackLayout  
-        BackgroundColor="#CFBCA8"
-        Padding="40,40"
-        Spacing="25">
-        <Image
-            Source="logocampsoft.png"
-            HeightRequest="185"/>
-
-        <Label 
-            Text="SUA AGENDA"
-            FontSize="Header"
-            HorizontalOptions="Center"
-            Padding="10"/>
-        <StackLayout Orientation="Horizontal" Spacing="10">
-            <Label Text="Selecione uma data:"
-                   VerticalOptions="Start"
-                   Margin="0,20,0,0"/>
-            <DatePicker
+    <ScrollView
+        >
+        <VerticalStackLayout  
+            BackgroundColor="#CFBCA8"
+            Padding="40,40"
+            Spacing="25">
+            <Image
+                Source="logocampsoft.png"
+                HeightRequest="185"/>
+            <Label 
+                Text="SUA AGENDA"
+                FontSize="Header"
+                HorizontalOptions="Center"
+                Padding="10"/>
+            <StackLayout Orientation="Horizontal" Spacing="10">
+                <Label Text="Selecione uma data:"
+                    VerticalOptions="Start"
+                    Margin="0,20,0,0"/>
+                <DatePicker
                 x:Name="DataAgendamento"
                 FontSize="20"
-                DateSelected="DataAgendamento_DateSelected"/>  
-        </StackLayout>
-        <Grid>
-        </Grid>
-        <Button
-            x:Name="BtnAgendar"
-            Text="Agendar"
-            IsEnabled="False"
-            Clicked="BtnAgendar_Clicked"/>
-
-    </VerticalStackLayout>
+                DateSelected="DataAgendamento_DateSelected"/>
+            </StackLayout>
+            <StackLayout 
+                x:Name="ListaHorarioDisponivel"
+                BackgroundColor="AliceBlue">
+            </StackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
