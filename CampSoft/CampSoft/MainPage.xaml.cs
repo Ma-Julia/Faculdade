@@ -30,6 +30,20 @@ namespace CampSoft
            
         }
 
+        private void BTNSorteioCompleto_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BTNAgendarCampo_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BTNCadastroTime_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

@@ -19,20 +19,24 @@
             HorizontalOptions="Start"/>
         <Entry
             x:Name="EdtQuantidade"
-            Keyboard="Numeric"/>
+            Keyboard="Numeric"
+            TextChanged="EdtQuantidade_TextChanged"/>
         <Image
             x:Name="ColorTeam"
             Source="conquistas"
             HeightRequest="270"/>
         <Label
-            Text="Numeros sorteados: "
+            x:Name="lblNumerosSorteados"
+            Text="Numeros sorteados: 0"
             FontAttributes="Bold"
             HorizontalOptions="CenterAndExpand"/>
         <Label
-            Text="Azul: "
+            x:Name="lblQuantidadeAzul"
+            Text="Azul: 0"
             HorizontalOptions="CenterAndExpand"/>
         <Label
-            Text="Amarelo: "
+            x:Name="lblQuantidadeAmarelo"
+            Text="Amarelo: 0"
             HorizontalOptions="CenterAndExpand"/>
         <Button
             x:Name="BtnSortear"

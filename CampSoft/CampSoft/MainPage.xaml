@@ -12,17 +12,77 @@
                 <Image
                 Source="logocampsoft.png"
                 HeightRequest="185"/>
-
-                <Button 
-                x:Name="BTNSorteioSimples"
-                Text="SORTEIO DE TIME SIMPLES"
-                TextColor="#27341E"
-                FontSize="16"
-                BackgroundColor="Transparent"
-                HorizontalOptions="Center"
-                Clicked="BTNSorteioSimples_Clicked"/>
-
-
+                <Frame
+                    CornerRadius="200"
+                    WidthRequest="350"
+                    HeightRequest="350"
+                    BackgroundColor="Transparent">
+                    <StackLayout HorizontalOptions="Center"
+                                 VerticalOptions="Center">
+                        <StackLayout Orientation="Horizontal">
+                            <Button 
+                                 x:Name="BTNSorteioSimples"
+                                 Text="SORTEIO DE TIME SIMPLES"
+                                 LineBreakMode="WordWrap"
+                                 TextColor="#27341E"
+                                 FontSize="14"
+                                 BackgroundColor="Transparent"
+                                 HorizontalOptions="End"
+                                 HeightRequest="150"
+                                 WidthRequest="150"
+                                Margin="0,0,1,0"
+                                 Clicked="BTNSorteioSimples_Clicked"/>
+                            <Line Y1="0" Y2="150" 
+                              StrokeDashArray="1,3" 
+                              StrokeThickness="3"
+                              Stroke="Black"/>  
+                            <Button 
+                                 x:Name="BTNSorteioCompleto"
+                                 Text="SORTEIO DE TIME COMPLETO"
+                                 LineBreakMode="WordWrap"
+                                 TextColor="#27341E"
+                                 FontSize="14"
+                                 BackgroundColor="Transparent"
+                                 HorizontalOptions="End"
+                                 HeightRequest="150"
+                                 WidthRequest="150"
+                                 Clicked="BTNSorteioCompleto_Clicked"/>
+                        </StackLayout>
+                        <Line X1="0" X2="500" 
+                              StrokeDashArray="1,3" 
+                              StrokeThickness="3"
+                              Stroke="Black"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                            <Button 
+                                 x:Name="BTNAgendarCampo"
+                                 Text="AGENDAR CAMPO"
+                                 LineBreakMode="WordWrap"
+                                 TextColor="#27341E"
+                                 FontSize="14"
+                                 BackgroundColor="Transparent"
+                                 HorizontalOptions="End"
+                                 HeightRequest="150"
+                                 WidthRequest="150"
+                                 Clicked="BTNAgendarCampo_Clicked"/>
+                            <Line Y1="1" Y2="150" 
+                                  StrokeDashArray="1,3" 
+                                  StrokeThickness="3"
+                                  Stroke="Black"/>          
+                            <Button 
+                                 x:Name="BTNCadastroTime"
+                                 Text="CADASTRAR/EDITAR TIME"
+                                 LineBreakMode="WordWrap"
+                                 TextColor="#27341E"
+                                 FontSize="14"
+                                 BackgroundColor="Transparent"
+                                 HorizontalOptions="End"
+                                 HeightRequest="150"
+                                 WidthRequest="150"
+                                Margin="3,0,0,0"
+                                 Clicked="BTNCadastroTime_Clicked"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
             </VerticalStackLayout>
         </ScrollView>
     </ContentPage>
@@ -35,7 +95,6 @@
                 <Image
                 Source="logocampsoft.png"
                 HeightRequest="185"/>
-
                 <Label Text="SUAS CONQUISTAS"
                    FontSize="16"
                    HorizontalOptions="Center"
