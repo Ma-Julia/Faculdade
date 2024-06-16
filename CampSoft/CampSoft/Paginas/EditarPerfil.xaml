@@ -42,11 +42,19 @@
         <Entry
             x:Name="EntTime"
             Keyboard="Default"/>
-        <Button
+        <StackLayout Orientation="Horizontal">
+            <Button
             x:Name="BtnVoltar"
             Clicked="BtnVoltar_Clicked"
             ImageSource="voltar.png"
             HeightRequest="50"
             HorizontalOptions="Start"/>
+            <Button
+            x:Name="BtnOk"
+            Clicked="BtnOk_Clicked"
+            ImageSource="ok.png"
+            HeightRequest="50"
+            HorizontalOptions="EndAndExpand"/>
+        </StackLayout>
     </VerticalStackLayout>
 </ContentPage>
