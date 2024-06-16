@@ -42,9 +42,9 @@ namespace CampSoft
            
         }
 
-        private void BTNSorteioCompleto_Clicked(object sender, EventArgs e)
+        private async void BTNSorteioCompleto_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushModalAsync(new SorteioCompleto());
         }
 
         private void BTNAgendarCampo_Clicked(object sender, EventArgs e)
