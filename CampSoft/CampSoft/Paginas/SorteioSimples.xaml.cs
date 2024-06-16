@@ -26,14 +26,14 @@ public partial class SorteioSimples : ContentPage
 
     private void BtnReiniciar_Clicked(object sender, EventArgs e)
     {
-        _quantidadejogadores = 0;
         _numerosSorteados = 0;
         _numerosAzuisSorteados = 0;
         _numerosAmarelosSorteados = 0;
-        _caixaSorteio.Clear();
         lblNumerosSorteados.Text = "Numeros sorteados: 0";
         lblQuantidadeAzul.Text = "Azul: 0";
         lblQuantidadeAmarelo.Text = "Amarelo: 0";
+        CorSorteio.BackgroundColor = Colors.White;
+        prepararSorteio();
     }
 
     private void BtnSortear_Clicked(object sender, EventArgs e)
@@ -50,9 +50,11 @@ public partial class SorteioSimples : ContentPage
 
                 if (numero % 2 == 0){
                     _numerosAzuisSorteados++;
+                    CorSorteio.BackgroundColor = Colors.Blue;
                 }
                 else {
                     _numerosAmarelosSorteados++;
+                    CorSorteio.BackgroundColor = Colors.Yellow;
                 }
 
                 _caixaSorteio.Remove(numero);
@@ -68,14 +70,10 @@ public partial class SorteioSimples : ContentPage
 
     private void EdtQuantidade_TextChanged(object sender, TextChangedEventArgs e)
     {
-        _caixaSorteio.Clear();
+       
         if (!e.NewTextValue.IsNullOrEmpty()) {
             _quantidadejogadores = Convert.ToInt32(e.NewTextValue);
-
-            for (int i = 0; i < _quantidadejogadores; i++)
-            {
-                _caixaSorteio.Add(i + 1);
-            }
+            prepararSorteio();
         }
         else
         {
@@ -84,6 +82,16 @@ public partial class SorteioSimples : ContentPage
             lblQuantidadeAzul.Text = "Azul: 0";
             lblQuantidadeAmarelo.Text = "Amarelo: 0";
 
+        }
+    }
+
+    private void prepararSorteio()
+    {
+        _caixaSorteio.Clear();
+
+        for (int i = 0; i < _quantidadejogadores; i++)
+        {
+            _caixaSorteio.Add(i + 1);
         }
     }
     /*protected override void OnAppearing()
