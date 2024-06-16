@@ -67,10 +67,14 @@
 	<ItemGroup>
 	  <None Remove="Resources\Images\agenda.png" />
 	  <None Remove="Resources\Images\conquistas.png" />
+	  <None Remove="Resources\Images\editar.png" />
 	  <None Remove="Resources\Images\inicio.png" />
 	  <None Remove="Resources\Images\iniciocasa.png" />
+	  <None Remove="Resources\Images\ir.png" />
 	  <None Remove="Resources\Images\logocampsoft.png" />
+	  <None Remove="Resources\Images\patch.png" />
 	  <None Remove="Resources\Images\perfil.png" />
+	  <None Remove="Resources\Images\voltar.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -88,6 +92,12 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="Paginas\Agendamento.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\Conquistas.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\EditarConquistas.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Paginas\Perfil.xaml">
