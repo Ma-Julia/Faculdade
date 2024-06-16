@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CampSoft.Paginas.EditarPerfil"
+             BackgroundColor="#CFBCA8"
+             Title="EditarPerfil">
+
+    <VerticalStackLayout
+        Padding="40,30"
+        Spacing="10">
+        <Label
+            Text="Perfil"
+            FontSize="Title"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+        <Label
+            Text="Seu Nome:"
+            FontSize="15"
+            HorizontalOptions="Start"/>
+        <Entry
+            x:Name="EntNome"
+            Keyboard="Default"/>
+        <Label
+            Text="Classe:"
+            FontSize="15"
+            HorizontalOptions="Start"/>
+        <Picker x:Name="picker"
+        Title="Select a monkey">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Assault</x:String>
+                    <x:String>DMR</x:String>
+                    <x:String>Sniper</x:String>
+                    <x:String>Suporte</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+        <Label
+            Text="Time:"
+            FontSize="15"
+            HorizontalOptions="Start"/>
+        <Entry
+            x:Name="EntTime"
+            Keyboard="Default"/>
+        <Button
+            x:Name="BtnVoltar"
+            Clicked="BtnVoltar_Clicked"
+            ImageSource="voltar.png"
+            HeightRequest="50"
+            HorizontalOptions="Start"/>
+    </VerticalStackLayout>
+</ContentPage>
