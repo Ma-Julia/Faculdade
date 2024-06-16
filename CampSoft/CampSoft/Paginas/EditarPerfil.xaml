@@ -25,7 +25,7 @@
             FontSize="15"
             HorizontalOptions="Start"/>
         <Picker x:Name="picker"
-        Title="Select a monkey">
+        Title="Selecione uma classe">
             <Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>Assault</x:String>

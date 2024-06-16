@@ -9,6 +9,11 @@ namespace CampSoft
         //private readonly Conexao conexao;
         public MainPage()
         {
+            var paginaConquistas = new Conquistas()
+            {
+                Title = "",
+                IconImageSource = "conquistas"
+            };
             var paginaAgendamento = new Agendamento()
             {
                 Title = "",
@@ -22,6 +27,7 @@ namespace CampSoft
             };
 
             InitializeComponent();
+            this.Children.Add(paginaConquistas);
             this.Children.Add(paginaAgendamento);
             this.Children.Add(paginaPerfil);
 
