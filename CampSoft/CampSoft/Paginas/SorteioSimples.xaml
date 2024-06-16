@@ -52,9 +52,9 @@
             Clicked="BtnReiniciar_Clicked"
             Text="Reiniciar"
             TextColor="#FF3131"
-            BackgroundColor="#27341E" 
             Opacity="1"
-            
+            BorderColor="#27341E"
+            BorderWidth="1"
             FontSize="Body"
             HorizontalOptions="Center"
             VerticalOptions="EndAndExpand"/>

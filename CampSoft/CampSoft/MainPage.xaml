@@ -16,7 +16,8 @@
                     CornerRadius="200"
                     WidthRequest="350"
                     HeightRequest="350"
-                    BackgroundColor="Transparent">
+                    BackgroundColor="Transparent"
+                    BorderColor="#27341E">
                     <StackLayout HorizontalOptions="Center"
                                  VerticalOptions="Center">
                         <StackLayout Orientation="Horizontal">
@@ -35,7 +36,7 @@
                             <Line Y1="0" Y2="150" 
                               StrokeDashArray="1,3" 
                               StrokeThickness="3"
-                              Stroke="Black"/>  
+                              Stroke="#27341E"/>  
                             <Button 
                                  x:Name="BTNSorteioCompleto"
                                  Text="SORTEIO DE TIME COMPLETO"
@@ -51,7 +52,7 @@
                         <Line X1="0" X2="500" 
                               StrokeDashArray="1,3" 
                               StrokeThickness="3"
-                              Stroke="Black"/>
+                              Stroke="#27341E"/>
                         <StackLayout Orientation="Horizontal" HorizontalOptions="End">
                             <Button 
                                  x:Name="BTNAgendarCampo"
@@ -67,7 +68,7 @@
                             <Line Y1="1" Y2="150" 
                                   StrokeDashArray="1,3" 
                                   StrokeThickness="3"
-                                  Stroke="Black"/>          
+                                  Stroke="#27341E"/>          
                             <Button 
                                  x:Name="BTNCadastroTime"
                                  Text="CADASTRAR/EDITAR TIME"
@@ -99,23 +100,6 @@
                    FontSize="16"
                    HorizontalOptions="Center"
                    Padding="10"/>
-            </VerticalStackLayout>
-        </ScrollView>
-    </ContentPage>
-    <ContentPage
-        IconImageSource="perfil">
-        <ScrollView>
-            <VerticalStackLayout  BackgroundColor="#CFBCA8"
-            Padding="40,40"
-            Spacing="25">
-                <Image
-                Source="logocampsoft.png"
-                HeightRequest="185"/>
-                
-                <Label Text="SEU PERFIL"
-           FontSize="Header"
-           HorizontalOptions="Center"
-           Padding="10"/>
             </VerticalStackLayout>
         </ScrollView>
     </ContentPage>

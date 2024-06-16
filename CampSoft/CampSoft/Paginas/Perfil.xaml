@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CampSoft.Paginas.Perfil"
+             Title="Perfil">
+    <ScrollView>
+        <VerticalStackLayout  BackgroundColor="#CFBCA8"
+            Padding="40,40"
+            Spacing="25">
+
+            <Image Source="perfil"
+                       HeightRequest="70"
+                       HorizontalOptions="CenterAndExpand"
+                       Margin="10"/>
+            <Button
+                    x:Name="BNTEditar"
+                    ImageSource="editar.png"
+                    HeightRequest="50"
+                    HorizontalOptions="End"
+                    Clicked="BNTEditar_Clicked"
+                    />
+            <Label 
+                 Text="Seu nome"
+                 FontSize="18"
+                 HorizontalOptions="Fill"/>
+            <Label 
+                 Text="Classe:"
+                 FontSize="16"
+                 HorizontalOptions="Fill"/>
+            <Label 
+                 Text="Equipe:"
+                 FontSize="16"
+                 HorizontalOptions="Fill"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

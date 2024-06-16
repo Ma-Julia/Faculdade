@@ -14,12 +14,18 @@ namespace CampSoft
                 Title = "",
                 IconImageSource = "Agenda"
             };
-        
-           
+
+            var paginaPerfil = new Perfil()
+            {
+                Title = "",
+                IconImageSource = "Perfil"
+            };
+
             InitializeComponent();
             this.Children.Add(paginaAgendamento);
+            this.Children.Add(paginaPerfil);
 
-           
+
         }
 
         private async void BTNSorteioSimples_Clicked(object sender, EventArgs e)
