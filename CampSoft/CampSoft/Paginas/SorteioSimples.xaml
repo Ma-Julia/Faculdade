@@ -21,10 +21,12 @@
             x:Name="EdtQuantidade"
             Keyboard="Numeric"
             TextChanged="EdtQuantidade_TextChanged"/>
-        <Image
-            x:Name="ColorTeam"
-            Source="conquistas"
-            HeightRequest="270"/>
+        <Frame
+            x:Name="CorSorteio"
+           HeightRequest="250"
+            WidthRequest="250"
+            BackgroundColor="White"
+            />
         <Label
             x:Name="lblNumerosSorteados"
             Text="Numeros sorteados: 0"
