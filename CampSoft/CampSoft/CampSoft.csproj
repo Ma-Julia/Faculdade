@@ -58,6 +58,7 @@
 
 	<ItemGroup>
 	  <Compile Remove="componentes\DataPage.cs" />
+	  <Compile Remove="Paginas\NewPage1.xaml.cs" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -65,13 +66,20 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Remove="Paginas\NewPage1.xaml" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Remove="Resources\Images\agenda.png" />
+	  <None Remove="Resources\Images\campo.png" />
 	  <None Remove="Resources\Images\conquistas.png" />
 	  <None Remove="Resources\Images\editar.png" />
+	  <None Remove="Resources\Images\equipe.png" />
 	  <None Remove="Resources\Images\inicio.png" />
 	  <None Remove="Resources\Images\iniciocasa.png" />
 	  <None Remove="Resources\Images\ir.png" />
 	  <None Remove="Resources\Images\logocampsoft.png" />
+	  <None Remove="Resources\Images\ok.png" />
 	  <None Remove="Resources\Images\patch.png" />
 	  <None Remove="Resources\Images\perfil.png" />
 	  <None Remove="Resources\Images\voltar.png" />
@@ -79,6 +87,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.1" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="8.0.0" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.40" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
@@ -94,10 +103,16 @@
 	  <MauiXaml Update="Paginas\Agendamento.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Paginas\CadastroEquipe.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Paginas\Conquistas.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Paginas\EditarConquistas.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\EditarEquipe.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Paginas\Perfil.xaml">

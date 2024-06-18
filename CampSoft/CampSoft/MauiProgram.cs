@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using CampSoft.componentes;
+using Microsoft.Data.SqlClient;
+using Microsoft.Extensions.Logging;
 
 namespace CampSoft
 {
@@ -6,6 +8,8 @@ namespace CampSoft
     {
         public static MauiApp CreateMauiApp()
         {
+            var connectionString = "Data Source=192.168.0.7,1435;Initial Catalog=dbCampSoft;User ID=sa;Password=root123;Trust Server Certificate=True;Encrypt=False";
+            var conexao = new ConexaoSQL(connectionString);
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
