@@ -7,18 +7,26 @@
         BackgroundColor="#CFBCA8"
         Padding="10,40"
         Spacing="5">
-        <Label 
-            x:Name="PGSorteioSimples"
-            Text="SORTEIO DE TIME SIMPLES"
-            FontSize="18"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center"
-            Margin="20"/>
+        <StackLayout
+            Orientation="Horizontal"
+            HorizontalOptions="Center">
+            <Image Source="dado.png"
+           HeightRequest="50"/>
+
+            <Label x:Name="PGSorteioSimples"
+                   Text="SORTEIO DE TIME SIMPLES"
+                   FontSize="18"
+                   Padding="10"
+                   HorizontalOptions="Center"
+                   Margin="0,30,0,0"/>
+        </StackLayout>
         <Label
             Text="Quantidade de jogadores"
-            HorizontalOptions="Start"/>
+            HorizontalOptions="Start"
+            Margin="15,0,0,0"/>
         <Entry
             x:Name="EdtQuantidade"
+            Margin="15,0,0,0"
             Keyboard="Numeric"
             TextChanged="EdtQuantidade_TextChanged"/>
         <Frame
@@ -44,17 +52,18 @@
             x:Name="BtnSortear"
             Clicked="BtnSortear_Clicked"
             Text="Sortear"
-            BackgroundColor="Transparent"
             TextColor="#FF3131"
             FontSize="Body"
+            BorderColor="#27341E"
+            BorderWidth="1"
             HorizontalOptions="Center"
-            VerticalOptions="EndAndExpand"/>
+            VerticalOptions="EndAndExpand"
+            Margin="0,15,0,15"/>
         <Button
             x:Name="BtnReiniciar"
             Clicked="BtnReiniciar_Clicked"
             Text="Reiniciar"
             TextColor="#FF3131"
-            Opacity="1"
             BorderColor="#27341E"
             BorderWidth="1"
             FontSize="Body"
@@ -63,11 +72,9 @@
         <Button
             x:Name="BtnVoltar"
             Clicked="BtnVoltar_Clicked"
-            Text="Voltar"
-            BackgroundColor="Transparent"
-            TextColor="#FF3131"
-            FontSize="Body"
-            HorizontalOptions="Center"
+            ImageSource="voltar"
+            HeightRequest="50"
+            HorizontalOptions="Start"
             VerticalOptions="EndAndExpand"/>
     </VerticalStackLayout>
 </ContentPage>
