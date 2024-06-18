@@ -15,10 +15,10 @@ namespace CampSoft.Classes
 
         public enum Classe
         {
-            ASSAULT = 1,
+            Assault = 1,
             DMR = 2,
-            SNIPER = 3,
-            SUPORTE = 4
+            Sniper = 3,
+            Suporte = 4
         }
 
     }

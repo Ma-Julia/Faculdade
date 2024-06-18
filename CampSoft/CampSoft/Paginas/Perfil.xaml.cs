@@ -1,14 +1,18 @@
+using CampSoft.DAO;
+
 namespace CampSoft.Paginas;
 
 public partial class Perfil : ContentPage
 {
-	public Perfil()
+    private readonly ConexaoService conexaoService;
+	public Perfil(ConexaoService conexaoService)
 	{
+        this.conexaoService = conexaoService;
 		InitializeComponent();
 	}
 
     private async void BNTEditar_Clicked(object sender, EventArgs e)
     {
-        await Navigation.PushModalAsync(new EditarPerfil());
+        await Navigation.PushModalAsync(new EditarPerfil(conexaoService));
     }
 }

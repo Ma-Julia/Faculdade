@@ -4,7 +4,7 @@ public partial class EditarEquipe : ContentPage
 {
 	public EditarEquipe()
 	{
-	
+        InitializeComponent();
 	}
 
     private async void BTNVoltar_Clicked(object sender, EventArgs e)
