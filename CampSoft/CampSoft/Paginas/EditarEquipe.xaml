@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CampSoft.Paginas.EditarEquipe"
+             BackgroundColor="#CFBCA8"
+             Title="EditarEquipe">
+    <VerticalStackLayout
+        Padding="40,30"
+        Spacing="10">
+        <Label
+            Text="Perfil da equipe"
+            FontSize="Title"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+        <Label
+            Text="Nome da equipe:"
+            FontSize="15"
+            HorizontalOptions="Start"/>
+        <Entry
+            x:Name="EntNome"
+            Keyboard="Default"/>
+        <Label
+            Text="Jogadores:"
+            FontSize="15"
+            HorizontalOptions="Start"/>
+        <Entry
+            x:Name="EntJogadores"
+            Keyboard="Default"/>
+        <StackLayout Orientation="Horizontal">
+            <Button 
+                x:Name="BTNVoltar"
+                ImageSource="voltar"
+                HorizontalOptions="End"
+                HeightRequest="85"
+                Margin="0,0,1,0"
+                Clicked="BTNVoltar_Clicked"/>
+            <Button 
+                x:Name="BTNOk"
+                ImageSource="ok"
+                HorizontalOptions="End"
+                HeightRequest="85"
+                Margin="0,0,1,0"
+                Clicked="BTNOk_Clicked"/>
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

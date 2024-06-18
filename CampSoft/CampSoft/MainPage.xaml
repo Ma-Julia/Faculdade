@@ -70,8 +70,8 @@
                                   StrokeThickness="3"
                                   Stroke="#27341E"/>
                             <Button 
-                                 x:Name="BTNCadastroTime"
-                                 Text="CADASTRAR/EDITAR TIME"
+                                 x:Name="BTNCadastroEquipe"
+                                 Text="CADASTRAR/EDITAR EQUIPE"
                                  LineBreakMode="WordWrap"
                                  TextColor="#27341E"
                                  FontSize="14"
@@ -80,7 +80,7 @@
                                  HeightRequest="150"
                                  WidthRequest="150"
                                 Margin="3,0,0,0"
-                                 Clicked="BTNCadastroTime_Clicked"/>
+                                 Clicked="BTNCadastroEquipe_Clicked_1"/>
                         </StackLayout>
                     </StackLayout>
                 </Frame>

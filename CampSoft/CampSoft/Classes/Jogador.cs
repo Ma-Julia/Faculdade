@@ -6,13 +6,20 @@ using System.Threading.Tasks;
 
 namespace CampSoft.Classes
 {
-    internal class Jogador
+    public class Jogador
     {
         public int IdJogador { get; set; }
         public string? Nome { get; set;}
-        public Classe.Tipo classe { get; set; }
-        public int IdEquipe {  get; set; }
-        public int IdUsuario {  get; set; }
-        
+        public Classe classe { get; set; }
+        public string? Equipe {  get; set; }
+
+        public enum Classe
+        {
+            ASSAULT = 1,
+            DMR = 2,
+            SNIPER = 3,
+            SUPORTE = 4
+        }
+
     }
 }
