@@ -36,11 +36,11 @@
             </Picker.ItemsSource>
         </Picker>
         <Label
-            Text="Time:"
+            Text="Equipe:"
             FontSize="15"
             HorizontalOptions="Start"/>
         <Entry
-            x:Name="EntTime"
+            x:Name="EntEquipe"
             Keyboard="Default"/>
         <StackLayout Orientation="Horizontal">
             <Button
