@@ -43,8 +43,8 @@ namespace CampSoft.DAO
                         {
                             HorariosDisponiveis horario = new HorariosDisponiveis();
                             horario.IdHorario = reader.GetInt32(0);
-                            horario.HoraInicio = reader.GetDateTime(1);
-                            horario.HoraFinal = reader.GetDateTime(2);
+                            horario.DataHoraInicio = reader.GetDateTime(1);
+                            horario.DataHoraFinal = reader.GetDateTime(2);
 
                             horarios.Add(horario);
                         }
@@ -66,16 +66,18 @@ namespace CampSoft.DAO
             {
                 connection.Open();
 
-                string sql = @"SELECT hd.IdHorario, 
+                string sql = @" SET DATEFORMAT DMY
+
+                                SELECT hd.IdHorario, 
                                 DataHoraInicio,
                                 DataHoraFinal 
                                 FROM TbHorarioDisponivel hd
                                 WHERE HD.IdHorario NOT IN (SELECT IdHorario FROM TbAgendamento)
-                                AND DataHoraInicio = CAST(@Data AS DATE)";
+                                AND FORMAT(DataHoraInicio, 'dd/MM/yyyy') = @Data";
 
                 using (SqlCommand command = new SqlCommand(sql, connection))
                 {
-                    command.Parameters.AddWithValue("@Data", Data.ToString("dd/MM/YYYY"));
+                    command.Parameters.AddWithValue("@Data", Data.ToString("dd/MM/yyyy"));
 
                     using (SqlDataReader reader = command.ExecuteReader())
                     {
@@ -83,8 +85,8 @@ namespace CampSoft.DAO
                         {
                             HorariosDisponiveis horario = new HorariosDisponiveis();
                             horario.IdHorario = reader.GetInt32(0);
-                            horario.HoraInicio = reader.GetDateTime(1);
-                            horario.HoraFinal = reader.GetDateTime(2);
+                            horario.DataHoraInicio = reader.GetDateTime(1);
+                            horario.DataHoraFinal = reader.GetDateTime(2);
 
                             horarios.Add(horario);
                         }
@@ -126,8 +128,8 @@ namespace CampSoft.DAO
                             while (reader.Read())
                             {
                                 horario.IdHorario = reader.GetInt32(0);
-                                horario.HoraInicio = reader.GetDateTime(1);
-                                horario.HoraFinal = reader.GetDateTime(2);
+                                horario.DataHoraInicio = reader.GetDateTime(1);
+                                horario.DataHoraFinal = reader.GetDateTime(2);
                             }
                         }
                         else {

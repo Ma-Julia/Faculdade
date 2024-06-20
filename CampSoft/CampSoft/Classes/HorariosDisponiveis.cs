@@ -9,7 +9,7 @@ namespace CampSoft.Classes
     public class HorariosDisponiveis
     {
         public int IdHorario { get; set; }
-        public DateTime HoraInicio { get; set; }
-        public DateTime HoraFinal { get; set; }
+        public DateTime DataHoraInicio { get; set; }
+        public DateTime DataHoraFinal { get; set; }
     }
 }
