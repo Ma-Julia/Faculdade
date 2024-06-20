@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace CampSoft.Classes
 {
-    internal class HorariosDisponiveis
+    public class HorariosDisponiveis
     {
         public int IdHorario { get; set; }
-        public DateOnly DiaSemana { get; set; }
-        public TimeOnly HoraInicio { get; set; }
-        public TimeOnly HoraFinal { get; set; }
+        public DateTime HoraInicio { get; set; }
+        public DateTime HoraFinal { get; set; }
     }
 }

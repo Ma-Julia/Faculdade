@@ -1,5 +1,4 @@
 ﻿using CampSoft.componentes;
-using CampSoft.DAO;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Logging;
 
@@ -7,9 +6,9 @@ namespace CampSoft
 {
     public static class MauiProgram
     {
+
         public static MauiApp CreateMauiApp()
         {
-            var connectionString = "Data Source=192.168.0.7,1435;Initial Catalog=dbCampSoft;User ID=sa;Password=root123;Trust Server Certificate=True;Encrypt=False";
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
@@ -18,8 +17,6 @@ namespace CampSoft
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
-
-            builder.Services.AddSingleton<ConexaoService>(x => new ConexaoService(connectionString));
 
 #if DEBUG
     		builder.Logging.AddDebug();

@@ -20,15 +20,18 @@
                     Clicked="BNTEditar_Clicked"
                     />
             <Label 
-                 Text="Seu nome"
+                x:Name="lblNome"
+                 Text="{Binding Nome, StringFormat='Nome: {0}'}"
                  FontSize="18"
                  HorizontalOptions="Fill"/>
             <Label 
-                 Text="Classe:"
+                x:Name="lblClasse"
+                 Text="{Binding classe, StringFormat='Classe: {0}'}"
                  FontSize="16"
                  HorizontalOptions="Fill"/>
             <Label 
-                 Text="Equipe:"
+                x:Name="lblEquipe"
+                 Text="{Binding Equipe, StringFormat='Equipe: {0}'}"
                  FontSize="16"
                  HorizontalOptions="Fill"/>
         </VerticalStackLayout>

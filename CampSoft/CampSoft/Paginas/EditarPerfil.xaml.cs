@@ -6,11 +6,16 @@ namespace CampSoft.Paginas;
 
 public partial class EditarPerfil : ContentPage
 {
-    private readonly ConexaoService conexaoService;
-	public EditarPerfil(ConexaoService conexaoService)
+    private Jogador _jogador;
+    private JogadorDAO _jogadorDAO;
+    public EditarPerfil(Jogador jogador, JogadorDAO jogadorDAO)
 	{
-        this.conexaoService = conexaoService;
+        _jogador = jogador;
+        _jogadorDAO = jogadorDAO;
         InitializeComponent();
+        BindingContext = _jogador;
+        picker.ItemsSource = Enum.GetValues(typeof(Jogador.Classe));
+        picker.SelectedItem = _jogador.classe;
 	}
 
     private async void BtnVoltar_Clicked(object sender, EventArgs e)
@@ -18,18 +23,25 @@ public partial class EditarPerfil : ContentPage
 		await Navigation.PopModalAsync();
     }
 
-    private void BtnOk_Clicked(object sender, EventArgs e)
+    private async void BtnOk_Clicked(object sender, EventArgs e)
     {
-        Jogador jogador = new Jogador();
+       try
+        {
+            _jogador = _jogadorDAO.BuscarJogador(2);
 
-        jogador.Nome = EntNome.Text;
-        var selectedItem = (string)picker.SelectedItem;
-        Jogador.Classe classeJogador = (Jogador.Classe) Enum.Parse(typeof(Jogador.Classe), selectedItem);
-        jogador.classe = classeJogador;
-        jogador.Equipe = EntEquipe.Text;
+            _jogador.Nome = EntNome.Text;
+            _jogador.classe = (Jogador.Classe)picker.SelectedItem;
+            _jogador.Equipe = EntEquipe.Text;
 
-        var jogadorDAO = new JogadorDAO(conexaoService.ObterConexao());
+            _jogadorDAO.AtualizarJogador(_jogador);
+            await DisplayAlert("Alteração de Usuario", "Cadastro feito com sucesso", "OK"); 
+            MessagingCenter.Send(this, "AtualizarPerfil", _jogador);
+            await Navigation.PopModalAsync();
+        }
+        catch (Exception ex) {
+            await DisplayAlert("Erro", "Não foi possivel cadastrar. \nMotivo: " + ex.Message, "OK");
+        }
 
-        jogadorDAO.CriarJogador(jogador);
+
     }
 }

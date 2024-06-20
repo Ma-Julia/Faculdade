@@ -19,21 +19,24 @@
             HorizontalOptions="Start"/>
         <Entry
             x:Name="EntNome"
+            Text="{Binding Nome}"
             Keyboard="Default"/>
         <Label
             Text="Classe:"
             FontSize="15"
             HorizontalOptions="Start"/>
         <Picker x:Name="picker"
-        Title="Selecione uma classe">
-            <Picker.ItemsSource>
+            Title="Selecione uma classe"
+            SelectedIndex="{Binding classe}"
+            ItemsSource="{Binding classesDisponiveis}">
+            <!--<Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>Assault</x:String>
                     <x:String>DMR</x:String>
                     <x:String>Sniper</x:String>
                     <x:String>Suporte</x:String>
                 </x:Array>
-            </Picker.ItemsSource>
+            </Picker.ItemsSource>-->
         </Picker>
         <Label
             Text="Equipe:"
@@ -41,6 +44,7 @@
             HorizontalOptions="Start"/>
         <Entry
             x:Name="EntEquipe"
+            Text="{Binding Equipe}"
             Keyboard="Default"/>
         <StackLayout Orientation="Horizontal">
             <Button

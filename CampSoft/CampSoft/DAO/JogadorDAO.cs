@@ -30,7 +30,7 @@ namespace CampSoft.DAO
                 using (SqlCommand command = new SqlCommand(sql, connection))
                 {
                     command.Parameters.AddWithValue("@Nome", jogador.Nome);
-                    command.Parameters.AddWithValue("@Classe", jogador.classe.ToString());
+                    command.Parameters.AddWithValue("@Classe", jogador.classe);
                     command.Parameters.AddWithValue("@Equipe", jogador.Equipe);
 
                     command.ExecuteNonQuery();
@@ -69,6 +69,45 @@ namespace CampSoft.DAO
             return jogadores;
         }
 
+        public Jogador BuscarJogador(int id)
+        {
+            Jogador jogador = new Jogador();
+
+            using (SqlConnection connection = conexaoSQL.ObterConexao())
+            {
+                connection.Open();
+
+                string sql = "SELECT IdJogador, Nome, Classe, Equipe FROM TbJogador WHERE IdJogador = @IdJogador";
+
+                using (SqlCommand command = new SqlCommand(sql, connection))
+                {
+                    command.Parameters.AddWithValue("@IdJogador", id);
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.HasRows) {
+                            while (reader.Read())
+                            {
+                                jogador.IdJogador = reader.GetInt32(0);
+                                jogador.Nome = reader.GetString(1);
+                                jogador.classe = Enum.Parse<Jogador.Classe>(reader.GetInt16(2).ToString());
+                                jogador.Equipe = reader.GetString(3);
+                            }
+                            
+
+                        }
+                        else
+                        {
+                            throw new Exception("Nao foi possivel encontrar um jogador");
+                        }
+
+                    }
+                }
+            }
+
+            return jogador;
+        }
+
         public void AtualizarJogador(Jogador jogador)
         {
             using (SqlConnection connection = conexaoSQL.ObterConexao())
@@ -81,7 +120,7 @@ namespace CampSoft.DAO
                 {
                     command.Parameters.AddWithValue("@IdJogador", jogador.IdJogador);
                     command.Parameters.AddWithValue("@Nome", jogador.Nome);
-                    command.Parameters.AddWithValue("@Classe", jogador.classe.ToString());
+                    command.Parameters.AddWithValue("@Classe", jogador.classe);
                     command.Parameters.AddWithValue("@Equipe", jogador.Equipe);
 
                     command.ExecuteNonQuery();
