@@ -1,4 +1,4 @@
-#Introdução
+#Introdução#
 
 Este aplicativo de airsoft foi desenvolvido como parte de um trabalho de faculdade para a disciplina de Sistemas Distribuídos e Desenvolvimento Mobile. O objetivo do aplicativo é facilitar a organização de jogos de airsoft para jogadores e donos de campos.
 
