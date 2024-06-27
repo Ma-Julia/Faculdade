@@ -7,8 +7,8 @@ Funcionalidades
 O aplicativo oferece as seguintes funcionalidades:
 
 Gerenciamento de Jogadores:
-Cadastro e edição de jogadores, incluindo informações como nome, equipe e experiência.
-Busca de jogadores por nome, equipe ou experiência.
+Cadastro e edição de jogadores, incluindo informações como nome, equipe e classe.
+Busca de jogadores por nome, equipe ou classe.
 Visualização de um perfil de jogador com todas as suas informações.
 Agendamento de Campo:
 Cadastro e edição de campos de airsoft, incluindo informações como nome, localização, capacidade e preço.
@@ -17,14 +17,12 @@ Visualização de um perfil de campo com todas as suas informações e agendamen
 Agendamento de jogos em campos, com seleção de data, hora, número de jogadores e preço.
 Visualização de todos os agendamentos de um jogador ou campo.
 Cancelamento de agendamentos.
-Tecnologias Utilizadas
 
 O aplicativo foi desenvolvido utilizando as seguintes tecnologias:
 
 Linguagem de programação: C#
 Framework de desenvolvimento mobile: MAUI
 Banco de dados: SQL Server
-Implementação
 
 O aplicativo foi implementado da seguinte forma:
 
