@@ -27,16 +27,8 @@
             HorizontalOptions="Start"/>
         <Picker x:Name="picker"
             Title="Selecione uma classe"
-            SelectedIndex="{Binding classe}"
+            SelectedItem="{Binding classe}"
             ItemsSource="{Binding classesDisponiveis}">
-            <!--<Picker.ItemsSource>
-                <x:Array Type="{x:Type x:String}">
-                    <x:String>Assault</x:String>
-                    <x:String>DMR</x:String>
-                    <x:String>Sniper</x:String>
-                    <x:String>Suporte</x:String>
-                </x:Array>
-            </Picker.ItemsSource>-->
         </Picker>
         <Label
             Text="Equipe:"

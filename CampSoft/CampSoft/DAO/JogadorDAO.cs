@@ -1,11 +1,6 @@
 ﻿using CampSoft.Classes;
 using CampSoft.componentes;
 using Microsoft.Data.SqlClient;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using static CampSoft.Classes.Jogador;
 
 namespace CampSoft.DAO
@@ -90,7 +85,7 @@ namespace CampSoft.DAO
                             {
                                 jogador.IdJogador = reader.GetInt32(0);
                                 jogador.Nome = reader.GetString(1);
-                                jogador.classe = Enum.Parse<Jogador.Classe>(reader.GetInt16(2).ToString());
+                                jogador.classe = Enum.Parse<Classe>(reader.GetString(2));
                                 jogador.Equipe = reader.GetString(3);
                             }
                             

@@ -1,11 +1,6 @@
 ﻿using CampSoft.Classes;
 using CampSoft.componentes;
 using Microsoft.Data.SqlClient;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CampSoft.DAO
 {
@@ -29,7 +24,9 @@ namespace CampSoft.DAO
             {
                 connection.Open();
 
-                string sql = @"SELECT hd.IdHorario, 
+                string sql = @" SET DATEFORMAT DMY
+
+                                SELECT hd.IdHorario, 
                                 DataHoraInicio,
                                 DataHoraFinal 
                                 FROM TbHorarioDisponivel hd

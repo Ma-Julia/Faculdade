@@ -17,10 +17,6 @@ public partial class Perfil : ContentPage
         _jogador = _jogadorDAO.BuscarJogador(2);
 
         BindingContext = _jogador;
-         
-        //lblNome.Text = "Nome: " + _jogador.Nome;
-        //lblClasse.Text = "Classe: " + _jogador.classe;
-        //lblEquipe.Text = "Equipe: " + _jogador.Equipe;
     }
 
     private async void BNTEditar_Clicked(object sender, EventArgs e)

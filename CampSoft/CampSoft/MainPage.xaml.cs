@@ -6,23 +6,19 @@ namespace CampSoft
 {
     public partial class MainPage : TabbedPage
     {
-        //private readonly Conexao conexao;
         public MainPage()
         {
             var paginaConquistas = new Conquistas()
-            {
-                Title = "",
+            {         
                 IconImageSource = "conquistas"
             };
             var paginaAgendamento = new Agendamento()
             {
-                Title = "",
                 IconImageSource = "Agenda"
             };
 
             var paginaPerfil = new Perfil()
             {
-                Title = "",
                 IconImageSource = "Perfil"
             };
 
@@ -36,10 +32,7 @@ namespace CampSoft
 
         private async void BTNSorteioSimples_Clicked(object sender, EventArgs e)
         {
-
-            await Navigation.PushModalAsync(new SorteioSimples());
-            
-           
+            await Navigation.PushModalAsync(new SorteioSimples());           
         }
 
         private async void BTNSorteioCompleto_Clicked(object sender, EventArgs e)
