@@ -3,9 +3,11 @@ using CampSoft.componentes;
 using CampSoft.DAO;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.Maui.Controls;
+using Microsoft.Maui.Controls.Compatibility;
 using Microsoft.Maui.Controls.PlatformConfiguration.TizenSpecific;
 using Label = Microsoft.Maui.Controls.Label;
 using ScrollView = Microsoft.Maui.Controls.ScrollView;
+using StackLayout = Microsoft.Maui.Controls.StackLayout;
 
 namespace CampSoft.Paginas;
 
@@ -112,8 +114,21 @@ public partial class Agendamento : ContentPage
         cancellationButton.Clicked += (sender, e) => CancelAppointment(horarioDisponivel);
         modal.Children.Add(cancellationButton);
 
-        // Display the modal using the appropriate method (e.g., modal dialog, overlay)
-        //DisplayAlert("Agendamento", modal, "Fechar");
+        var btnVoltar = new Button
+        {
+            
+            ImageSource = "voltar.png",
+            HeightRequest = 50,
+            HorizontalOptions = LayoutOptions.Start
+        };
+        btnVoltar.Clicked += (sender, e) => Navigation.PopModalAsync();
+
+        var stackLayout = new StackLayout
+        {
+            Orientation = StackOrientation.Vertical
+        };
+
+        stackLayout.Children.Add(btnVoltar);
 
         var scrollView = new ScrollView();
 
@@ -125,6 +140,7 @@ public partial class Agendamento : ContentPage
         };
 
         verticalStackLayout.Children.Add(modal);
+        verticalStackLayout.Children.Add(stackLayout);
         scrollView.Content = verticalStackLayout;
         var contentPage = new ContentPage
         {
